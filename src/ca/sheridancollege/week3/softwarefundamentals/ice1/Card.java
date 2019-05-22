@@ -15,6 +15,17 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * @author Sivagami
  */
 public class Card {
+ public int randomValue()
+   {
+       int number = (int)(Math.random()*13+1);
+       return number;
+   }
+   
+   public int randomSuit()
+   {
+       int suit = (int)(Math.random()*4);
+       return suit;
+   }
 
    private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
@@ -47,7 +58,17 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
-   
+     public int RandomValue(){
+       int num;
+       num = (int)(Math.random()*13+1);
+       return num;
+   }
+   public int RandomSuit(){
+       int num;
+       num = (int)(Math.random()*3+0);
+       return num;
+   }
+   }
    //Write two methods to generate random number of values and suits here
     
-}
+
