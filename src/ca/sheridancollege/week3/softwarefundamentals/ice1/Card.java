@@ -20,6 +20,13 @@ public class Card {
    private int value;//1-13
 
    public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
+   
+   
+   Card(){
+       suit = SUITS[(int)(Math.random()*4)];
+       value = (int)(Math.random()*13)+1;
+   }
+   
     /**
      * @return the suit
      */
@@ -46,6 +53,10 @@ public class Card {
      */
     public void setValue(int value) {
         this.value = value;
+    }
+    
+    public void printCard(Card c){
+        System.out.println("The card is a "+c.getValue()+" of "+c.getSuit());
     }
    
    //Write two methods to generate random number of values and suits here
