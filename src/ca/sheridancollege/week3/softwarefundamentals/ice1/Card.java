@@ -6,7 +6,7 @@
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 
 import java.util.Objects;
-
+// Brian Furness (via remote)
 
 /**
  * A class that models playing card Objects. Cards have 
