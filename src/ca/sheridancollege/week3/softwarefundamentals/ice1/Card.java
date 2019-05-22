@@ -5,6 +5,9 @@
  */
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 
+import java.util.Objects;
+
+
 /**
  * A class that models playing card Objects. Cards have 
  * a value (note that Ace = 1, Jack = 11, Queen =12, King = 13)
@@ -12,7 +15,7 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * There are 52 cards in a deck, no jokers.
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
- * @author Sivagami
+ * @author Sivagami, Brian Furness 991553456
  */
 public class Card {
 
@@ -47,7 +50,31 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
+	
+	public static String randomSuit() {
+		return SUITS [(int) (Math.random() * 4)];
+	}
    
+	public static int randomValue() {
+		return (int) (Math.random() * 13) + 1;
+	}
    //Write two methods to generate random number of values and suits here
+	
+   @Override
+	public boolean equals (Object o){
+		if (o instanceof Card){
+			return ((Card) o).getValue() == this.value && ((Card) o).getSuit().equals(this.suit);
+		} else{
+			return false;
+		}
+	}
+
+	@Override
+	public int hashCode() {
+		int hash = 3;
+		hash = 89 * hash + Objects.hashCode(this.suit);
+		hash = 89 * hash + this.value;
+		return hash;
+	}
     
 }
