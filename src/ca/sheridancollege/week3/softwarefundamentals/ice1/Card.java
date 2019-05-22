@@ -11,7 +11,8 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * A suit (clubs, hearts, spades, diamonds).
  * There are 52 cards in a deck, no jokers.
  * This code is to be used in ICE1. When you create your own branch,
- * add your name as a modifier.
+ *  modifier= Gaganpreet Kaur.
+ * Student ID= 991549351
  * @author Sivagami
  */
 public class Card {
@@ -23,6 +24,7 @@ public class Card {
     /**
      * @return the suit
      */
+   
     public String getSuit() {
         return suit;
     }
@@ -47,7 +49,15 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
-   
+    public int randomValue(){
+       return value = (int)(Math.random()*13+1);
+    }
+    public int randomSuit(){
+        
+       int suit = (int)(Math.random()*4);
+       return suit;
+   }
+
    //Write two methods to generate random number of values and suits here
     
 }
