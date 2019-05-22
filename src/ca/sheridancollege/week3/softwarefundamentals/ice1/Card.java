@@ -12,7 +12,7 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * There are 52 cards in a deck, no jokers.
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
- * @author Sivagami
+ * @author Prashant Khanna
  */
 public class Card {
 
@@ -46,6 +46,17 @@ public class Card {
      */
     public void setValue(int value) {
         this.value = value;
+    }
+   public void setValue(int value) {
+        this.value = value;
+    }
+    public int randomValue(){
+        int num = (int)(Math.random()*13) +1;
+        return num;
+    }
+    public int randomSuit(){
+        int num =(int)(Math.random()*4);
+        return num;
     }
    
    //Write two methods to generate random number of values and suits here
