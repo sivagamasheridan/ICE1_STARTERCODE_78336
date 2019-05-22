@@ -26,6 +26,9 @@ public class CardTrick {
             magicHand[i].setSuit(Card.randomSuit());
         }
 		
+		
+		System.out.println ("Pick a card, any card");
+		System.out.println ("first select a suit 1-13");
 		Scanner scanner = new Scanner (System.in);
 		Card card = new Card();
 		int tmp;
