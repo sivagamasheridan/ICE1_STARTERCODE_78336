@@ -24,20 +24,21 @@ public class CardTrick {
         for (int i=0; i<magicHand.length; i++)
         {
             magicHand[i] = new Card();
-            //magicHand[i].printCard(magicHand[i]);
+            magicHand[i].printCard(magicHand[i]);
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
-        System.out.println("Please pick a card, Any card. number of card first, then suit.");
+        System.out.println("Please pick a card, Any card. suit of card first, then number.");
         Scanner sc = new Scanner(System.in);
         
+        String userSuit = sc.nextLine();
         int userValue = sc.nextInt();
-        String userSuit = sc.next();
+        
         
         for (int j = 0; j < magicHand.length; j++) {
             
             if(userValue == magicHand[j].getValue()){
-                if(userSuit.toLowerCase() == magicHand[j].getSuit().toLowerCase()){
+                if(userSuit.toLowerCase().equals(magicHand[j].getSuit().toLowerCase())){
                     System.out.println("The card is in the hand");
                     break;
                 }
