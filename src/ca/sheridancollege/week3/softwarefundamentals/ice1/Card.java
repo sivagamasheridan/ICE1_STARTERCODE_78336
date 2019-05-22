@@ -3,6 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+// Author: Jorge A. Mosquera
+
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 
 /**
