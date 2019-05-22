@@ -21,13 +21,11 @@ public class CardTrick {
         
         for (int i=0; i<magicHand.length; i++)
         {
-            Card c = new Card();
-            c.setValue(Card.randomValue());
-            c.setSuit(Card.randomSuit());
+            magicHand[i] = new Card();
+            magicHand[i].setValue(Card.randomValue());
+            magicHand[i].setSuit(Card.randomSuit());
         }
 		
-		System.out.println ("Pick a card, any card");
-		System.out.println ("first select a suit 1-13");
 		Scanner scanner = new Scanner (System.in);
 		Card card = new Card();
 		int tmp;
