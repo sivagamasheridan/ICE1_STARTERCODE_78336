@@ -47,7 +47,17 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
-   
+
    //Write two methods to generate random number of values and suits here
-    
-}
+    public int RandomValue()
+    {
+      int n = (int)(Math.random()*13+1);
+      return n;
+    }
+    public int RandomSuit()
+    {
+      int s = (int) (Math.random()*3+0);
+      return s;
+    }
+
+    }
