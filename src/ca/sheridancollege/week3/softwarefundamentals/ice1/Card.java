@@ -1,10 +1,11 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
-
+import java.util.Random;
 /**
  * A class that models playing card Objects. Cards have 
  * a value (note that Ace = 1, Jack = 11, Queen =12, King = 13)
@@ -50,4 +51,20 @@ public class Card {
    
    //Write two methods to generate random number of values and suits here
     
+    
+public int getRandomValue(){
+    Random rand = new Random();
+
+// Obtain a number between [0-52].
+    int n = rand.nextInt(52);
+// Obtain a value between [1-53].
+    value =n+ 1;
+    return value;
+}
+public int getRandomSuit(){
+    
+    int n=(int)(Math.random()*3+0);
+    return n;
+}
+
 }
