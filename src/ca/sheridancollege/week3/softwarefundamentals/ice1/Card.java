@@ -59,6 +59,8 @@ public class Card {
        return suit;
    }
    
+   //test chANGe
+   
    //Write two methods to generate random number of values and suits here
     
 }
