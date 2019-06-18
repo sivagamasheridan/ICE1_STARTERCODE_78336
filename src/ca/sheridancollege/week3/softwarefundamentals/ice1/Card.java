@@ -52,7 +52,7 @@ public class Card {
        int number = (int)(Math.random()*13+1);
        return number;
    }
-   
+   //text
    public int randomSuit()
    {
        int suit = (int)(Math.random()*4);
